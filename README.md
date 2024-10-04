@@ -1,0 +1,12 @@
+# Enhancing ROP Plus Form Diagnosis: An Automatic Blood Vessel Segmentation Approach for Newborn Fundus Images
+
+**Background:** ROP Plus Form is an eye disease that can lead to blindness, and diagnosing it requires medical experts to manually examine the retinal condition. This task is challenging due to its subjective nature and poor image quality. Therefore, developing automatic tools for Retinal Blood Vessel Segmentation in fundus images could assist healthcare experts in diagnosing, monitoring, and prognosing the disease.
+
+**Objective:** This study focuses on developing a novel pipeline for automatically segmenting retinal blood vessels. The main requirements are that it can correctly identify the blood vessels in fundus images and perform well on different systems used for newborn evaluation. 
+
+**Methods:** The pipeline uses different methods, including CIELAB Enhancement, Background Normalization, Bell-Shaped Gaussian Matched Filtering, Modified Top-Hat operation, and a combination of vesselness filtering composed of Frangi and Jerman Filters. The segmentation is done by determining a threshold using the Triangle Threshold algorithm. A novel filter is also proposed to remove the Optical Disc artifacts from the primary segmentation based on the Circular Hough Transform. The segmentation pipeline is combined with different pre-trained Convolution Neural Network architectures to evaluate its automatic classification capabilities.
+
+**Results:** The pipeline was tested with newborn fundus images acquired with Clarity RetCam3 and Phoenix ICON systems. The results were compared against annotations from three ophthalmologic experts. Clarity RetCam3 images achieved an accuracy of 0.94, specificity of 0.95, and sensitivity of 0.81, while Phoenix ICON images achieved an accuracy of 0.94, specificity of 0.97, and sensitivity of 0.83. The pipeline was also tested for the DRIVE Database, achieving an accuracy of 0.95, specificity of 0.97, and sensitivity of 0.82. For the classification task, the best results were achieved with the DenseNet121 architecture with an accuracy of 0.946.
+
+**Conclusion:** The segmentation scores were auspicious and confirmed the clinical relevance of the proposed pipeline. It has also proven to have a good generalization performance, essential for easier clinic integration. Finally, preliminary results on using CNNs showed how our work can be used to develop fully automatic tools for diagnosing ROP Plus form disease.
+
